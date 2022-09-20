@@ -37,13 +37,14 @@ p {
 header {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 275px 275px 60px;
+  /* grid-template-rows: 275px 275px 60px; */
   grid-column: 1/ 7;
 }
 
 .header--left {
   grid-column: 1 / 4;
   grid-row: 1 / 3;
+  height: 550px;
   background-color: #c7ddea;
   background-image: url(img/family.png);
   background-size: 55%;
@@ -56,7 +57,7 @@ header {
 
 header h2 {
   color: white;
-  margin-top: 10px;
+  /* margin-top: 30px; */
 }
 
 .header--left p {
@@ -115,6 +116,7 @@ header h2 {
 
 nav {
   background-color: #ebebeb;
+  height: 60px;
   padding: 0px 75px;
   grid-column: 1 / -1;
   grid-row: 3 / 3;
@@ -148,7 +150,6 @@ nav a:nth-child(1) {
 
 main {
   height: 100%;
-  /* width: 100%; */
   grid-column: 1 / 7;
   grid-row: 4;
   display: grid;
@@ -172,11 +173,12 @@ main {
 /* Main Top Section */
 
 .main--top-h1 {
-  grid-column: 2/4;
-  grid-row: 1/2;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
   z-index: 1;
   margin-top: 80px;
   color: #fff;
+  text-align: left;
   width: 320px;
 }
 
@@ -305,10 +307,18 @@ article {
   height: 333px;
 }
 
+.cards {
+  display: grid;
+}
+
 .section--card-1 {
   grid-column: 1/2;
   grid-row: 1/2;
   background-color: #c7ddea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .section--card-2 {
@@ -340,4 +350,75 @@ article {
   grid-row: 2/3;
   background-color: #fff;
 }
+
+section article p {
+  justify-self: center;
+  padding-bottom: 40px;
+}
+
+section article h2 {
+  padding: 25px 0 0 25px;
+  font-size: 36px;
+  color: #8d8d8d;
+}
+
+.section--card-1 h1 {
+  padding: 30px;
+  text-align: center;
+}
+
+.section--card-4 p {
+  padding: 40px;
+  text-align: center;
+}
+
 /* Footer Section */
+
+footer {
+  grid-column: 1/7;
+  grid-row: 6;
+}
+
+footer article {
+  height: 68px;
+  background-color: #a9a19e;
+  grid-column: 1/7;
+  grid-row: 6;
+  text-align: center;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+footer img {
+  width: 30px;
+  align-self: center;
+}
+
+footer section {
+  background-color: #777574;
+  grid-column: 1/7;
+  grid-row: 7;
+  height: 340px;
+}
+
+/* Contact.html */
+
+.contact--main-header {
+  grid-column: 1 / 7;
+  grid-row: 1/3;
+  height: 340px;
+  background-color: #c7ddea;
+  background-image: url(img/man-and-child.png);
+  background-repeat: no-repeat;
+  background-position: right 120px bottom 0px;
+}
+
+.contact--main-header h1 {
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+  align-self: start;
+}
