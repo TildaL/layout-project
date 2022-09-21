@@ -66,7 +66,6 @@ a:hover {
   background-color: #fff;
   border: none;
   text-transform: uppercase;
-  /* margin-top: 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -511,7 +510,7 @@ textarea:nth-child(5) {
   grid-column: 1/7;
   grid-row: 3/4;
   height: 400px;
-  background-image: url(/img/map-contact.png);
+  background-image: url(img/map-contact.png);
   display: flex;
   align-items: baseline;
   justify-content: center;
